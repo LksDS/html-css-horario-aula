@@ -16,20 +16,47 @@ hr {
 }
 h2 {
   padding-top: 5px;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid white;
   text-align: center;
   padding-bottom: 10px;
   background-color: crimson;
+}
+.horarios-dia {
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+input{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+  width: 100%;
+  height: 40px;
+}
+.check-box-dia{
+  opacity: 0;
+}
+.check-box-dia:hover{
+  cursor: pointer;
+}
+.check-box-dia:checked ~.horarios{
+  position: relative;
+  top: 0px;
+  opacity: 1;
+}
+.horarios{
+  z-index: -1;
+  opacity: 0;
+  position: absolute;
+  top: -250px;
+  transition: .5s;
 }
 #quadro-horarios {
   width: 100%;
   max-width: 800px;
   margin: auto;
 }
-.horarios-dia {
-  border: 1px solid white;
-  margin-bottom: 10px;
-}
+
 .horario {
   display: flex;
   border-bottom: 1px solid darkgray;
@@ -45,11 +72,9 @@ h2 {
   width: 13%;
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: gray;
+  background-color: rgb(65, 65, 65);
 }
 .horario > .nome-materia {
-  padding-left: 10px;
-  padding-right: 10px;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -59,5 +84,6 @@ h2 {
   padding-bottom: 5px;
   text-align: center;
   border-left: 1px solid white;
+  background-color: rgb(65, 65, 65);
   width: 23%;
 }
