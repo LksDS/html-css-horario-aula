@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  background-color: black;
+  padding-top: 30px;
+}
+h1 {
+  text-align: center;
+}
+hr {
+  margin-bottom: 20px;
+}
+h2 {
+  padding-top: 5px;
+  border-bottom: 2px solid white;
+  text-align: center;
+  padding-bottom: 10px;
+  background-color: crimson;
+}
+#quadro-horarios {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+.horarios-dia {
+  border: 1px solid white;
+  margin-bottom: 10px;
+}
+.horario {
+  display: flex;
+  border-bottom: 1px solid darkgray;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-between;
+}
+.horario > .hora {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 13%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: gray;
+}
+.horario > .nome-materia {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.horario > .apostila {
+  height: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  border-left: 1px solid white;
+  width: 23%;
+}
