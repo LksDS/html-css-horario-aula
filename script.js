@@ -41,6 +41,7 @@ switch(data.getDay()){
         break;
     }
     default:{
+        document.getElementById("segunda-feira-check").checked = true;
         break;
     }
 }
